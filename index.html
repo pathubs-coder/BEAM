@@ -11,7 +11,6 @@
         background: #0d0d0d;
         color: white;
         font-family: Arial, sans-serif;
-        overflow-x: hidden;
     }
 
     h1 {
@@ -92,20 +91,9 @@
     .corner-buttons a:hover {
         background: rgba(255,255,255,0.27);
     }
-
-    #particles-js {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        top: 0;
-        left: 0;
-    }
 </style>
 </head>
 <body>
-
-<div id="particles-js"></div>
 
 <div class="corner-buttons">
     <a href="https://roblox.com.ge/communities/3204454304/" target="_blank">
@@ -124,7 +112,7 @@
     <input type="text" id="sec1" placeholder="Type here...">
 </div>
 
-<!-- SECTION 2 (FIXED) -->
+<!-- SECTION 2 -->
 <div class="section">
     <label class="label">Section 2</label>
     <input type="text" id="sec2" placeholder="Type here...">
@@ -162,20 +150,6 @@ function sendToWebhook() {
 
     alert("Sent!");
 }
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js", {
-    particles: {
-        number: { value: 80 },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.7 },
-        size: { value: 3 },
-        move: { speed: 1 }
-    }
-});
 </script>
 
 </body>
